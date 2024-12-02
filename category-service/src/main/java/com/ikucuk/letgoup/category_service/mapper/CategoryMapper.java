@@ -1,6 +1,6 @@
 package com.ikucuk.letgoup.category_service.mapper;
 
-import com.ikucuk.letgoup.category_service.core.domain.entity.category.CategoryEntity;
+import com.ikucuk.letgoup.category_service.core.domain.CategoryEntity;
 import com.ikucuk.letgoup.category_service.dto.CategoryDTO;
 
 public class CategoryMapper {
@@ -12,6 +12,8 @@ public class CategoryMapper {
         categoryDto.setName(categoryEntity.getName());
         categoryDto.setParent(categoryEntity.getParent());
         categoryDto.setSubCategories(categoryEntity.getSubCategories());
+        categoryDto.setCreatedAt(categoryEntity.getCreatedAt());
+        categoryDto.setCreatedBy(categoryEntity.getCreatedBy());
 
         return categoryDto;
     }
@@ -23,6 +25,8 @@ public class CategoryMapper {
         categoryEntity.setName(categoryDto.getName());
         categoryEntity.setParent(categoryDto.getParent());
         categoryEntity.setSubCategories(categoryDto.getSubCategories());
+        categoryEntity.setCreatedAt(categoryDto.getCreatedAt());
+        categoryEntity.setCreatedBy(categoryDto.getCreatedBy());
 
         return categoryEntity;
     }
