@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @Component
 public class JpaCategoryRepositoryAdapter implements CategoryRepositoryPort {
+
     private final JpaCategoryRepository jpaOrderRepository;
 
     public JpaCategoryRepositoryAdapter(JpaCategoryRepository jpaOrderRepository) {
