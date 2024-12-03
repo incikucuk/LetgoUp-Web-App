@@ -4,10 +4,10 @@ import com.ikucuk.letgoup.category_service.dto.CategoryDTO;
 
 public interface CategoryServicePort {
 
-    void createCategory(CategoryDTO categoryDTO);
+    CategoryDTO createCategory(CategoryDTO categoryDTO);
 
-//    CategoryDTO getCategoryById(Long id);
-//
+    CategoryDTO findByCategoryId(Long id);
+
 //    void updateCategory(Long id, CategoryDTO customer);
 //
 //    void deleteCategory(Long id);

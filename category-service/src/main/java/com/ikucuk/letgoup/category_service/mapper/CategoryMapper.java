@@ -2,7 +2,9 @@ package com.ikucuk.letgoup.category_service.mapper;
 
 import com.ikucuk.letgoup.category_service.core.domain.CategoryEntity;
 import com.ikucuk.letgoup.category_service.dto.CategoryDTO;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CategoryMapper {
 
     public static CategoryDTO categoryEntityToCategoryDTO(CategoryEntity categoryEntity) {

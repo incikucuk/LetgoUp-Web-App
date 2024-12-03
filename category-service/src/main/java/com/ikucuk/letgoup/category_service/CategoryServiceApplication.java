@@ -9,15 +9,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
-@Configuration
 public class CategoryServiceApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		SpringApplication.run(CategoryServiceApplication.class, args);
 	}
 
-//	@Bean
-//	public CategoryServicePort createCategoryPort(CategoryServicePort categoryServicePort) {
-//		return new CreateCategoryService(categoryServicePort);
-//	}
 }

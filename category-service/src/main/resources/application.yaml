@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/category
+    username: postgres
+    password: rootuser
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  cloud:
+    gateway:
+      routes:
+        - id: category-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/categories/**

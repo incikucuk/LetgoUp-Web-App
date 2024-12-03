@@ -15,4 +15,5 @@ public class CategoryDTO {
     private Set<CategoryEntity> subCategories = new HashSet<CategoryEntity>();
     private LocalDateTime createdAt;
     private String createdBy;
+
 }
