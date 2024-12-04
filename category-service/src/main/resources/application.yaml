@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/category
+    url: jdbc:postgresql://localhost:5432/letgo_category
     username: postgres
     password: rootuser
   jpa:

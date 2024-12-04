@@ -19,10 +19,11 @@ public class JpaCategoryRepositoryAdapter implements CategoryRepositoryPort {
     }
 
     @Override
-    public void save(CategoryDTO categoryDto) {
+    public CategoryDTO save(CategoryDTO categoryDto) {
 
        jpaOrderRepository.save(
                CategoryMapper.categoryDTOToCategoryEntity(categoryDto));
+        return categoryDto;
     }
 
     @Override

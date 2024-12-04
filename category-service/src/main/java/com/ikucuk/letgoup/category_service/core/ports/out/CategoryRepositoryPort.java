@@ -7,9 +7,10 @@ import java.util.Optional;
 
 public interface CategoryRepositoryPort {
 
-    void save(CategoryDTO categoryDTO);
+    CategoryDTO save(CategoryDTO categoryDTO);
 
     Optional<CategoryDTO> findById(Long id);
 
-//    void delete(CategoryDTO category);
+//    void update(Customer customer);
+//    void delete(Long id);
 }

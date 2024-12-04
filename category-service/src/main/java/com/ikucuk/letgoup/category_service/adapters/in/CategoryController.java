@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/categories")
+@RequestMapping("/api/categories")
 public class CategoryController {
 
     private final CategoryServicePort categoryServicePort;
@@ -23,11 +23,10 @@ public class CategoryController {
     }
 
     //getByCategoryId
-    @GetMapping("/{id}")
-    public ResponseEntity<CategoryDTO> getCategory(@RequestParam Long id) {
-        return new ResponseEntity<>(categoryServicePort.findByCategoryId(id), HttpStatus.OK);
-    }
-
+//    @GetMapping("/{id}")
+//    public ResponseEntity<CategoryDTO> getCategory(@RequestParam Long id) {
+//        return new ResponseEntity<>(categoryServicePort.findByCategoryId(id), HttpStatus.OK);
+//    }
 
     //update category
 
